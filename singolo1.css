@@ -47,6 +47,7 @@ h1::after {
     color: #ffffff;
     letter-spacing: -0.25px;
 }
+
 .menu li:first-child a{
     color: #f06c64;
     
@@ -56,6 +57,11 @@ h1::after {
     position: relative;
     right: 14px;
     bottom: 3px;
+}
+.menu li a:hover {
+    cursor: pointer;
+    color: green;
+    text-decoration: underline;
 }
 .slider {
     width: 1020px;
@@ -85,6 +91,14 @@ h1::after {
 }
 .arrow-left {
     margin-left: 42px;
+}
+.arrow-left:hover {
+    cursor: pointer;
+    transform: scale(2);
+}
+.arrow-right:hover {
+    cursor: pointer;
+    transform: scale(2) rotate(180deg);
 }
 .service {
     width: 1020px;
@@ -132,6 +146,8 @@ h1::after {
 .service-item {
     display: flex;
     width: 300px;
+    height: 91px;
+    overflow: hidden;
     margin-left: 19px;
     align-items: flex-start;
     margin-top: 31px;
