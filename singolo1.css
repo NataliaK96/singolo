@@ -86,3 +86,127 @@ h1::after {
 .arrow-left {
     margin-left: 42px;
 }
+.service {
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
+    border-bottom: 6px #ffffff solid;
+}
+.service-header {
+    padding-top: 68px;
+    margin-left: 40px;
+    letter-spacing: -0.2px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+}
+.service-about-1 {
+    margin-left: 39px;
+    margin-top: 27px;
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.15px;
+}
+.service-about-2 {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0;
+}
+.service-container {
+    margin-left: 22px;
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-item {
+    display: flex;
+    width: 300px;
+    margin-left: 19px;
+    align-items: flex-start;
+    margin-top: 31px;
+}
+.service-item .item-about {
+    margin-left: 19px;
+}
+.service-item .item-header {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    text-align: left;
+}
+.service-item .item-text {
+    width: 219px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #767e9e;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 11px;
+    margin-left: 2px;
+    
+}
+.service-item .item-icon {
+    margin-top: 3px;
+}
+#item1 .item-text-add{
+    width: 219px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.1px;
+}
+#item1 .item-text {
+    width: 223px;
+    word-spacing: 4.8px;
+}
+#item2 .item-text {
+    /*word-break: break-all;
+    word-wrap: break-word;*/
+    width: 220px;
+    /*word-spacing: 5px;*/
+    /*letter-spacing: 0.21px;*/
+    line-height: 22px;
+
+}
+#item2 .item-text::first-line {
+    letter-spacing: 0.15px;
+    line-height: 21px;
+    word-spacing: 0;
+}
+#item3 .item-header {
+    margin-top: 1px;
+    margin-left: 3px;
+    letter-spacing: -0.1px;
+}
+#item3 .item-text {
+    line-height: 21px;
+}
+#item4 .item-text {
+    line-height: 21px;
+}
+#item5 .item-text {
+    line-height: 21px;
+}
+#item6 .item-text {
+    width: 226px;
+    line-height: 21px;
+}
+#item6 .item-header {
+    margin-left: 3px;
+    margin-top: 0.5px;
+    letter-spacing: -0.1px;
+}
