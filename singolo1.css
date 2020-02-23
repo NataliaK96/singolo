@@ -57,3 +57,32 @@ h1::after {
     right: 14px;
     bottom: 3px;
 }
+.slider {
+    width: 1020px;
+    height: 594px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f06c64;
+    border-bottom: 6px #ea676b solid;
+}
+.phone-vert {
+    margin-left: 103px;
+    margin-top: 51px;
+}
+.phone-hor {
+    margin-top: 167px;
+    margin-left: 48px;
+}
+.arrow {
+    margin-top: 281px;
+    position: absolute;
+}
+.arrow-right {
+    right: 0;
+    margin-right: 40px;
+    transform: rotate(180deg);
+}
+.arrow-left {
+    margin-left: 42px;
+}
