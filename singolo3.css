@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Lato;
+  src: url(./assets/font/Lato-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Lato;
+  src: url(./assets/font/Lato-Black.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: Lato;
+  src: url(./assets/font/Lato-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+}
+body {
+  font-family: "Lato";
+}
+.main {
+  width: 1020px;
+  margin: auto;
+  background-color: #f06c64;
+  padding-left: 39px;
+  padding-bottom: 39px;
+  border-bottom: #ea676b solid 6px;
+  box-sizing: border-box;
+}
+.get-a-quote-header {
+  padding-top: 68px;
+  margin-left: 1px;
+  letter-spacing: -0.1px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+.get-a-quote-description {
+  margin-top: 27px;
+  margin-left: 1px;
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+}
+.get-a-quote-description::first-line {
+  word-spacing: 1.1px;
+}
+.data-input {
+  margin-top: 47px;
+}
+.submit {
+  border-radius: 5px;
+  background-color: #d6564f;
+  border: 1px #f0d8d9 solid;
+  color: #f0d8d9; 
+}
+.footer {
+  box-sizing: border-box;
+  width: 1020px;
+  margin: auto;
+  height: 76px;
+  padding-left: 39px;
+  background-color: #2d303a;
+}
+.contacts {
+  margin-top: 47px;
+  margin-left: 19px;
+}
+.contact-information {
+font-size: 18px;
+line-height: 18px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 900;
+text-align: left;
+}
+.contact-information-description {
+width: 305px;
+height: 111px;
+font-size: 12px;
+line-height: 22px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+margin-top: 10px;
+}
+.data-and-contacts {
+  display: flex;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  font-size: 12px;
+  color: #f0d8d9;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+}
+.contact-link-name {
+  margin-left: 11px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.input-base {
+  width: 615px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #d6564f;
+  border: 0;
+  color: #f48c8f;
+  padding-left: 4px;
+}
+.input-base:not(:first-child) {
+  margin-top: 14px;
+}
+.input-base::placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 10px;
+}
+.input-describe {
+  height: 202px;
+  resize: none;
+}
+.input-describe::placeholder {
+  font-size: 12px;
+  line-height: 29px;
+  font-family: "Lato";
+  padding-left: 10px;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  margin-left: 2px;
+  color: #666d89;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+.footer-link-container {
+  margin-right: 39px;
+  padding-top: 1px;
+  display: flex;
+  padding-right: 0px;
+  justify-content: space-between;
+  width: 154px;
+}
+#phone {
+  margin-top: 6px;
+  margin-left: 1px;
+}
+#email {
+  margin-top: 8px;
+  margin-left: 1px;
+}
+#email .contact-link-name {
+  margin-left: 10px;
+}
+.footer-link:hover {
+  transform: scale(1.2);
+}
+.submit:hover {
+  cursor: pointer;
+}
