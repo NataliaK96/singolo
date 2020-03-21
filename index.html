@@ -11,20 +11,31 @@
         <h1>SINGOLO</h1>
         <nav>
             <ul id="menu" class="menu">
-                <li><a href="#menu">HOME</a></li>
-                <li><a href="#service">SERVICES</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#main" class="anchor anchor-main active-anchor">HOME</a></li>
+                <li><a href="#service" class="anchor anchor-service">SERVICES</a></li>
+                <li><a href="#portfolio" class="anchor anchor-portfolio">PORTFOLIO</a></li>
+                <li><a href="#about" class="anchor anchor-about">ABOUT</a></li>
+                <li><a href="#contact" class="anchor anchor-contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main" id="main">
         <section class="slider">
             <img class="arrow arrow-left" src="./assets/img/chev.svg" alt="left arrow">
             <img class="arrow arrow-right" src="./assets/img/chev.svg" alt="right arrow">
-            <img class="phone phone-vert" src="./assets/img/iPhone Vertical.png" alt="vertical iPhone">
-            <img class="phone phone-hor" src="./assets/img/iPhone Horizontal.png" alt="horizontal iPhone">
+            <div class="slider__item active">
+              <div class="phone phone-vert">
+                <div id="black-phone-vert" class="black-phone-vert"></div>
+                <img id="phone-vert-img" src="./assets/img/iPhone Vertical.png" alt="vertical iPhone">
+              </div>
+              <div class="phone phone-hor">
+                <div id="black-phone-hor" class="black-phone-hor"></div>            
+                <img id="phone-hor-img" src="./assets/img/iPhone Horizontal.png" alt="horizontal iPhone">
+              </div>
+            </div>
+            <div class="slider__item">
+              <img src="./assets/img/Slider.png" alt="Slider 2">
+            </div>
         </section>
         <section id="service" class="service">
             <h2 class="service-header">Our Services</h2>
@@ -93,10 +104,10 @@
             <p class="portfolio-description">Duis mollis, est non commodo luctus, nisi erat porttitor 
               ligula, eget lacinia odio sem nec elit.</p>
             <div class="portfolio-filters">
-              <button class="portfolio-filters-button selected">All</button>
-              <button class="portfolio-filters-button">Web Design </button>
-              <button class="portfolio-filters-button">Graphic Design</button>
-              <button class="portfolio-filters-button" id="atwork">Artwork</button>
+              <button id="button-all" class="portfolio-filters-button selected">All</button>
+              <button id="button-web" class="portfolio-filters-button">Web Design </button>
+              <button id="button-graphic" class="portfolio-filters-button">Graphic Design</button>
+              <button id="button-artwork" class="portfolio-filters-button" id="atwork">Artwork</button>
             </div>
             <div class="portfolio-images">
               <img class="portfolio-images-item" src="./assets/img/Pic1.png" alt="picture">
@@ -172,9 +183,9 @@
               <br>
               <input class="input-base" type="email" name="Email" required placeholder="Email (Required)">
               <br>
-              <input class="input-base" type="subject" name="Subject" placeholder="Subject">
+              <input class="input-base input-subject" type="subject" name="Subject" placeholder="Subject">
               <br>
-              <textarea class="input-base input-describe" type="text" name="Describe" required 
+              <textarea class="input-base input-describe" type="text" name="Describe" maxlength="200"
               placeholder="Describe your project in detail..."></textarea>
               <br>
               <button class="submit" type="submit">Submit</button>
@@ -211,5 +222,12 @@
           <a href="#" class="footer-link"><img src="./assets/img/linkedin.png" alt="linkedin" class="footer-link-img"></a>
         </div>
       </footer>
+      <div class="window">
+        <div class="window__confirmation">Письмо отправлено</div>
+        <div class="window__topic"></div>
+        <div class="window__description"></div>
+        <button class="window__ok">OK</button>
+      </div>
+      <script src="./script.js"></script>
 </body>
 </html>
