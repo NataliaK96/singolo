@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="wrapper">
     <header class="header">
-        <h1>SINGOLO</h1>
-        <nav>
+        <button class="burger">
+          <img src="./assets/img/Burger-menu-icon.png" alt="menu">
+        </button>
+        <h1 class="h1">SINGOLO</h1>
+        <nav class="nav">
             <ul id="menu" class="menu">
                 <li><a href="#main" class="anchor anchor-main active-anchor">HOME</a></li>
                 <li><a href="#service" class="anchor anchor-service">SERVICES</a></li>
@@ -24,17 +28,19 @@
             <img class="arrow arrow-left" src="./assets/img/chev.svg" alt="left arrow">
             <img class="arrow arrow-right" src="./assets/img/chev.svg" alt="right arrow">
             <div class="slider__item active">
-              <div class="phone phone-vert">
-                <div id="black-phone-vert" class="black-phone-vert"></div>
-                <img id="phone-vert-img" src="./assets/img/iPhone Vertical.png" alt="vertical iPhone">
-              </div>
-              <div class="phone phone-hor">
-                <div id="black-phone-hor" class="black-phone-hor"></div>            
-                <img id="phone-hor-img" src="./assets/img/iPhone Horizontal.png" alt="horizontal iPhone">
+              <div class="phone-wrapper">
+                <div class="phone phone-vert">
+                  <div id="black-phone-vert" class="black-phone-vert"></div>
+                  <img id="phone-vert-img" src="./assets/img/iPhone Vertical.png" alt="vertical iPhone">
+                </div>
+                <div class="phone phone-hor">
+                  <div id="black-phone-hor" class="black-phone-hor"></div>            
+                  <img id="phone-hor-img" src="./assets/img/iPhone Horizontal.png" alt="horizontal iPhone">
               </div>
             </div>
+            </div>
             <div class="slider__item">
-              <img src="./assets/img/Slider.png" alt="Slider 2">
+              <img class="slider2" src="./assets/img/Slider.png" alt="Slider 2">
             </div>
         </section>
         <section id="service" class="service">
@@ -194,7 +200,7 @@
                <h3 class="contact-information">Contact Information</h2>
                <p class="contact-information-description">Quisque hendrerit purus dapibus, ornare nibh 
           vitae, viver&shy;ra nibh. &#160;Fusce vitae aliquam tellus. Proin sit amet volutpat libero.  &#160;Nulla &#160;sed
-          nunc et &#160;tortor luctus &#160;faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+          nunc et &#160;tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
                 <a href="#" class="contact-link">
                   <img src="./assets/img/location.png" alt="location" class="contact-link-img">
                   <p class="contact-link-name">Elm St. 14/05 Lost City</p>
@@ -213,21 +219,22 @@
     
       </div>
     </main>
-      <footer class="footer">
-        <p class="footer-copyright">© Copyright 2013</p>
-        <div class="footer-link-container">
-          <a href="#" class="footer-link"><img src="./assets/img/facebook.png" alt="facebook" class="footer-link-img"></a>
-          <a href="#" class="footer-link"><img src="./assets/img/google+.png" alt="google" class="footer-link-img"></a>
-          <a href="#" class="footer-link"><img src="./assets/img/twitter.png" alt="twitter" class="footer-link-img"></a>
-          <a href="#" class="footer-link"><img src="./assets/img/linkedin.png" alt="linkedin" class="footer-link-img"></a>
-        </div>
-      </footer>
-      <div class="window">
-        <div class="window__confirmation">Письмо отправлено</div>
-        <div class="window__topic"></div>
-        <div class="window__description"></div>
-        <button class="window__ok">OK</button>
+    <footer class="footer">
+      <p class="footer-copyright">© Copyright 2013</p>
+      <div class="footer-link-container">
+        <a href="#" class="footer-link"><img src="./assets/img/facebook.png" alt="facebook" class="footer-link-img"></a>
+        <a href="#" class="footer-link"><img src="./assets/img/google+.png" alt="google" class="footer-link-img"></a>
+        <a href="#" class="footer-link"><img src="./assets/img/twitter.png" alt="twitter" class="footer-link-img"></a>
+        <a href="#" class="footer-link"><img src="./assets/img/linkedin.png" alt="linkedin" class="footer-link-img"></a>
       </div>
-      <script src="./script.js"></script>
+    </footer>
+    <div class="window">
+      <div class="window__confirmation">Письмо отправлено</div>
+      <div class="window__topic"></div>
+      <div class="window__description"></div>
+      <button class="window__ok">OK</button>
+    </div>
+  </div>
+    <script src="./script.js"></script>
 </body>
 </html>
