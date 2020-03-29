@@ -3,10 +3,10 @@ const vertPhone = document.querySelector('#phone-vert-img');
 const blackHorPhone = document.getElementById('black-phone-hor');
 const blackVertPhone = document.getElementById('black-phone-vert');
 
-horPhone.addEventListener('click', ()=>{revert(blackHorPhone)});
-vertPhone.addEventListener('click', ()=>{revert(blackVertPhone)});
 blackHorPhone.addEventListener('click', ()=>{revert(blackHorPhone)});
 blackVertPhone.addEventListener('click', ()=>{revert(blackVertPhone)});
+//blackHorPhone.addEventListener('click', ()=>{revert(blackHorPhone)});
+//blackVertPhone.addEventListener('click', ()=>{revert(blackVertPhone)});
 
 function revert(phone) {
 	if (phone.style.backgroundColor != 'black') {
@@ -127,22 +127,48 @@ window.addEventListener('scroll', ()=>{
 	const offset = window.pageYOffset;
 	document.querySelector('.active-anchor').classList.remove('active-anchor')
 	switch (true) {
-		case offset>=0&&offset<=556:
+		case offset>=0&&offset<=356:
 			document.querySelector('.anchor-main').classList.add('active-anchor')
 			break;
-		case offset>=557&&offset<=1035:
+		case offset>=357&&offset<=1035:
 			document.querySelector('.anchor-service').classList.add('active-anchor')
 			break;
-		case offset>=1036&&offset<=1911:
+		case offset>=1036&&offset<=1800:
 			document.querySelector('.anchor-portfolio').classList.add('active-anchor')
 			break;
-		case offset>=1912&&offset<=2706:
+		case offset>=1801&&offset<=2200:
 			document.querySelector('.anchor-about').classList.add('active-anchor')
 			break;
-		case offset>=2707:
+		case offset>=2201:
 			document.querySelector('.anchor-contact').classList.add('active-anchor')
 			break;
 		default:;
 	} 
-	
+})
+
+const burger = document.querySelector('.burger')
+const nav = document.querySelector('.nav')
+const h1 = document.querySelector('.h1')
+
+
+burger.addEventListener('click', showMenu)
+function showMenu() {
+	if(burger.classList.contains('burger-active')){
+		burger.classList.remove('burger-active')
+		nav.classList.remove('nav-active')
+		h1.classList.remove('h1-active')
+	}
+	else {
+		burger.classList.add('burger-active')
+		nav.classList.add('nav-active')
+		h1.classList.add('h1-active')
+	}
+}
+
+anchorsArr.forEach(item=>{
+	item.addEventListener('click', ()=>{
+		burger.classList.remove('burger-active')
+		nav.classList.remove('nav-active')
+		h1.classList.remove('h1-active')
+	})
 })
